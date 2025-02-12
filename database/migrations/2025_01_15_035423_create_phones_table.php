@@ -14,11 +14,12 @@ return new class extends Migration
     public function up()
 {
     Schema::create('phones', function (Blueprint $table) {
+        //Kode ini digunakan dalam migration Laravel untuk membuat tabel phones dalam database
         $table->id();
         $table->unsignedBigInteger('user_id');
         $table->string('phone');
         $table->timestamps();
-
+        // adalah shortcut di Laravel untuk membuat kolom primary key otomatis.
         $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
     });
 } 
