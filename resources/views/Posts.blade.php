@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    {{-- <meta> → Elemen meta dalam HTML yang berisi informasi tentang halaman.
+charset="utf-8" → Menentukan encoding karakter yang digunakan oleh halaman web, yaitu UTF-8. --}}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Eloquent Relationships : Relasi One to Many</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
