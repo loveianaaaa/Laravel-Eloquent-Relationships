@@ -13,6 +13,9 @@ use Illuminate\Routing\Controller as BaseController;
 //Kode ini digunakan dalam Laravel untuk menjadikan BaseController sebagai induk dari semua controller dalam aplikasi.                                      adalah controller dasar (parent class) yang disediakan oleh Laravel.
 
 class Controller extends BaseController
+//Controller ini bertindak sebagai controller dasar dalam aplikasi.
+//semua controller lain di aplikasi Laravel biasanya akan mewarisi (extends) Controller ini.
+//Dengan mewarisi BaseController, semua controller mendapatkan fitur bawaan Laravel.
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
